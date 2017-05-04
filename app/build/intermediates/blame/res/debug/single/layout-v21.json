@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/TungAnh/Desktop/Weather_App/Weather_Forecast_03/app/build/intermediates/res/merged/debug/layout-v21/notification_template_icon_group.xml",
+        "source": "/Users/TungAnh/.android/build-cache/c949cdaf266e286fc2f87ce82cb3d00183ad53a1/output/res/layout-v21/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/Users/TungAnh/Desktop/Weather_App/Weather_Forecast_03/app/build/intermediates/res/merged/debug/layout-v21/notification_action_tombstone.xml",
+        "source": "/Users/TungAnh/.android/build-cache/c949cdaf266e286fc2f87ce82cb3d00183ad53a1/output/res/layout-v21/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/Users/TungAnh/Desktop/Weather_App/Weather_Forecast_03/app/build/intermediates/res/merged/debug/layout-v21/notification_action.xml",
+        "source": "/Users/TungAnh/.android/build-cache/c949cdaf266e286fc2f87ce82cb3d00183ad53a1/output/res/layout-v21/notification_action.xml"
+    },
+    {
+        "merged": "/Users/TungAnh/Desktop/Weather_App/Weather_Forecast_03/app/build/intermediates/res/merged/debug/layout-v21/notification_template_custom_big.xml",
+        "source": "/Users/TungAnh/.android/build-cache/c949cdaf266e286fc2f87ce82cb3d00183ad53a1/output/res/layout-v21/notification_template_custom_big.xml"
+    }
+]
