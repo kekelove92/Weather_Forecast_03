@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_day"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="@string/monday"
+        />
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_toLeftOf="@id/text_tempMin"
+        android:layout_marginRight="10dp"
+        android:id="@+id/text_tempMax"
+        android:textSize="20sp"
+        android:text="@string/temparaMax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <View
+        android:layout_marginTop="15dp"
+        android:background="@color/colorPrimary"
+        android:layout_width="2dp"
+        android:layout_height="20dp"
+        android:layout_toEndOf="@+id/text_tempMax"/>
+
+    <TextView
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/text_tempMin"
+        android:textSize="20sp"
+        android:text="@string/temparaMin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>

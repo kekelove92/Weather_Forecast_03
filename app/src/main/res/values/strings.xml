@@ -1,3 +1,32 @@
 <resources>
     <string name="app_name">Weather Forecast</string>
+    <string name="Hanoi">Ha Noi</string>
+    <string name="temp">30</string>
+    <string name="humidity">33</string>
+    <string name="winds">5</string>
+    <string name="monday">Monday</string>
+    <string name="temparaMax">40</string>
+    <string name="temparaMin">20</string>
+    <string name="c"> ˚C</string>
+    <string name="ms">m/s</string>
+    <string name="phantram">%</string>
+    <string name="noService">No Service Provider Available</string>
+    <string name="network">Network</string>
+    <string name="gps">GPS</string>
+    <string name="gpsNotEnabled">GPS Not Enabled</string>
+    <string name="askTurnOnGps">Do you wants to turn On GPS</string>
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+    <string name="ok">OK</string>
+    <string name="Do">˚</string>
+    <string name="today">Today</string>
+    <string name="NotLoadApiday">Cannnot load api day</string>
+    <string name="FaileLoadAPI">Faile to load api day</string>
+    <string name="NotLoadApiWeek">Cannnot load api week</string>
+    <string name="FailLoadApiWeek">Faile to load api week</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="doC">˚C</string>
+    <string name="doF">˚F</string>
+    <string name="selectTemp">Select Temperature:</string>
 </resources>
