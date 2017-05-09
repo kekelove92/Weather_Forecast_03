@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Weather Forecast</string>
+    <string name="Hanoi">Ha Noi</string>
+    <string name="temp">30˚</string>
+    <string name="humidity">33%</string>
+    <string name="winds">5m/s</string>
+    <string name="monday">Monday</string>
+    <string name="temparaMax">40˚C</string>
+    <string name="temparaMin">20˚C</string>
 </resources>
