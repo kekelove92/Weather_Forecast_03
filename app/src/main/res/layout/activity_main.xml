@@ -6,7 +6,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.framgia.weather.main.MainActivity">
+    tools:context="com.framgia.weather.MainActivity">
 
 
     <RelativeLayout
@@ -14,7 +14,7 @@
         android:layout_height="60dp">
 
         <ImageView
-            android:id="@+id/ib_setting"
+            android:id="@+id/image_setting"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_marginLeft="10dp"
@@ -40,7 +40,7 @@
             android:textStyle="bold"/>
 
         <ImageView
-            android:id="@+id/ib_add"
+            android:id="@+id/image_add"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_alignParentEnd="true"
@@ -57,7 +57,7 @@
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/tempMain"
+            android:id="@+id/text_tempMain"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/temp"
@@ -88,7 +88,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
             <TextView
-                android:id="@+id/tv_humidity"
+                android:id="@+id/text_humidity"
                 android:layout_marginTop="2dp"
                 android:text="@string/humidity"
                 android:textSize="20sp"
@@ -113,7 +113,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
                 <TextView
-                    android:id="@+id/tv_tempMax"
+                    android:id="@+id/text_tempMax"
                     android:textSize="20sp"
                     android:text="@string/temparaMax"
                     android:layout_width="wrap_content"
@@ -121,7 +121,7 @@
 
                 <TextView
                     android:layout_marginLeft="15dp"
-                    android:id="@+id/tv_tempMin"
+                    android:id="@+id/text_tempMin"
                     android:textSize="20sp"
                     android:text="@string/temparaMin"
                     android:layout_width="wrap_content"
@@ -144,7 +144,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
             <TextView
-                android:id="@+id/tv_winds"
+                android:id="@+id/text_winds"
                 android:textSize="20sp"
                 android:text="@string/winds"
                 android:layout_width="wrap_content"

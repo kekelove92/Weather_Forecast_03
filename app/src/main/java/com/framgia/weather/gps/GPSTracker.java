@@ -1,4 +1,4 @@
-package com.framgia.weather.main.weather;
+package com.framgia.weather.gps;
 
 import android.app.AlertDialog;
 import android.app.Service;
@@ -12,7 +12,6 @@ import android.os.Bundle;
 import android.os.IBinder;
 import android.provider.Settings;
 import android.support.annotation.Nullable;
-import android.util.Log;
 import android.widget.Toast;
 
 /**
@@ -20,12 +19,12 @@ import android.widget.Toast;
  */
 public class GPSTracker extends Service implements LocationListener {
     private final Context mContext;
-    boolean checkGPS = false;
-    boolean checkNetwork = false;
-    boolean canGetLocation = false;
-    Location loc;
-    double latitude;
-    double longitude;
+    private boolean checkGPS = false;
+    private boolean checkNetwork = false;
+    private boolean canGetLocation = false;
+    private Location loc;
+    private double latitude;
+    private double longitude;
     private static final long MIN_DISTANCE_CHANGE_FOR_UPDATES = 0;
     private static final long MIN_TIME_BW_UPDATES = 0;
     protected LocationManager locationManager;
@@ -35,7 +34,7 @@ public class GPSTracker extends Service implements LocationListener {
         getLocation();
     }
 
-    private Location getLocation(){
+    private Location getLocation() {
         try {
             locationManager = (LocationManager) mContext
                 .getSystemService(LOCATION_SERVICE);
@@ -58,7 +57,7 @@ public class GPSTracker extends Service implements LocationListener {
                             LocationManager.NETWORK_PROVIDER,
                             MIN_TIME_BW_UPDATES,
                             MIN_DISTANCE_CHANGE_FOR_UPDATES, this);
-                        Log.d("Network", "Network");
+
                         if (locationManager != null) {
                             loc = locationManager
                                 .getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
@@ -71,7 +70,7 @@ public class GPSTracker extends Service implements LocationListener {
                     }
                 }
             }
-            // if GPS Enabled get lat/long using GPS Services
+
             if (checkGPS) {
                 Toast.makeText(mContext, "GPS", Toast.LENGTH_SHORT).show();
                 if (loc == null) {
@@ -80,7 +79,7 @@ public class GPSTracker extends Service implements LocationListener {
                             LocationManager.GPS_PROVIDER,
                             MIN_TIME_BW_UPDATES,
                             MIN_DISTANCE_CHANGE_FOR_UPDATES, this);
-                        Log.d("GPS Enabled", "GPS Enabled");
+
                         if (locationManager != null) {
                             loc = locationManager
                                 .getLastKnownLocation(LocationManager.GPS_PROVIDER);
@@ -149,7 +148,9 @@ public class GPSTracker extends Service implements LocationListener {
 
     @Override
     public void onLocationChanged(Location location) {
-
+        latitude = location.getLatitude();
+        longitude = location.getLongitude();
+        stopUsingGPS();
     }
 
     @Override
