@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Weather Forecast</string>
+    <string name="NotLoadApiday">Cannnot load api day</string>
+    <string name="FaileLoadAPI">Faile to load api day</string>
+    <string name="NotLoadApiWeek">Cannnot load api week</string>
+    <string name="FailLoadApiWeek">Faile to load api week</string>
 </resources>
